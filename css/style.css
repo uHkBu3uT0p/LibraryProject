@@ -151,3 +151,30 @@ p {
   width: 100%;
   justify-content: space-evenly;
 }
+.pagination {
+  display: flex;
+  margin: 40px;
+  width: 68px;
+  height: 16px;
+  justify-content: space-between;
+}
+.button {
+  background-origin: content-box;
+  display: block;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #0c0c0e;
+  transition: 0.2s linear;
+}
+.button-r {
+  background-origin: content-box;
+  display: block;
+  width: 26px;
+  opacity: 0;
+}
+.button:hover {
+  background-color: #bb945f;
+}
+.button-r:hover {
+  cursor: pointer;
+}
