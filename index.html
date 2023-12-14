@@ -10,27 +10,29 @@
     <div class="box">
       <header class="header">
         <div class="menu">
-          <div class="name"><h1>Brooklyn Public Library</h1></div>
-          <ul class="nav">
-            <li><a href="">About</a></li>
-            <li><a href="">Favorites</a></li>
-            <li><a href="">Coffee shop</a></li>
-            <li><a href="">Contacts</a></li>
-            <li><a href="">Library Card</a></li>
-          </ul>
-          <img src="img/icon_profile.png" alt="Profile" />
+          <div class="name"><p class="heading">Brooklyn Public Library</p></div>
+          <div class="nav-profile">
+            <ul class="nav">
+              <li><a href="">About</a></li>
+              <li><a href="">Favorites</a></li>
+              <li><a href="">Coffee shop</a></li>
+              <li><a href="">Contacts</a></li>
+              <li><a href="">Library Card</a></li>
+            </ul>
+            <img src="img/icon_profile.png" alt="Profile" />
+          </div>
         </div>
         <div class="back">
           <img src="img/85c1859f825ed82614b2036bc8be037f.jpg" alt="backimg" />
           <div class="shadow"></div>
           <div class="welcom-bg">
-            <h2>Welcome <br />to the Brooklyn Library</h2>
+            <h1>Welcome <br />to the Brooklyn Library</h1>
           </div>
         </div>
       </header>
       <main class="main">
-        <div class="about">
-          <h3 class="title">About</h3>
+        <section class="about">
+          <h2 class="title">About</h2>
           <div class="line"></div>
           <p class="text-about">
             The Brooklyn Library is a free workspace, a large number of books
@@ -41,7 +43,7 @@
             <img src="img/image 2.png" alt="" />
             <img src="img/image 3.png" alt="" />
           </div>
-          <div class="pagination">
+          <div class="pagination-about">
             <div class="button-r">
               <div class="button"></div>
             </div>
@@ -52,7 +54,31 @@
               <div class="button"></div>
             </div>
           </div>
-        </div>
+        </section>
+        <section class="favorites">
+          <h2 class="title">Favorites</h2>
+          <div class="line"></div>
+          <span class="subtitle">Pick favorites of season</span>
+          <div class="pagination-favorites">
+            <div>
+              <label for="case1">Winter</label>
+              <input type="radio" name="case" id="case1" value="case1" />
+            </div>
+            <div>
+              <label for="case2">Spring</label>
+              <input type="radio" name="case" id="case2" value="case2" />
+            </div>
+            <div>
+              <label for="case3">Summer</label>
+              <input type="radio" name="case" id="case3" value="case3" />
+            </div>
+            <div>
+              <label for="case4">Autumn</label>
+              <input type="radio" name="case" id="case4" value="case4" />
+            </div>
+          </div>
+          <div class="bg-description"></div>
+        </section>
       </main>
       <footer></footer>
     </div>
