@@ -239,7 +239,7 @@ label {
 }
 .name-bg-description {
   display: flex;
-  width: 355px;
+  width: 357px;
   margin: 20px 0 0 20px;
   flex-direction: column;
 }
@@ -319,11 +319,11 @@ h4 {
 .img-bg-description {
   display: block;
   position: absolute;
-  left: 410px;
+  left: 390px;
   top: 254px;
 }
 .bg-description-right {
-  margin: 20px 80px;
+  margin: 20px 60px;
 }
 /* section Coffee Shop */
 .coffee-shop {
