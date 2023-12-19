@@ -345,6 +345,15 @@ h4 {
   justify-content: space-between;
   width: 100%;
 }
+.name-menu-cs-left {
+  display: flex;
+  flex-direction: column;
+}
+.name-menu-cs-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 .text-menu-cs {
   display: block;
   width: 199px;
@@ -366,7 +375,6 @@ h4 {
   display: inline-flex;
   flex-direction: column;
   list-style: none;
-  align-items: flex-start;
   gap: 40px;
   align-items: flex-end;
 }
@@ -378,7 +386,7 @@ h5 {
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 2px;
-  text-transform: capitalize;
+  margin-bottom: 40px;
 }
 .menu-cs {
   display: flex;
@@ -461,6 +469,15 @@ h5 {
 }
 .tel-cotnact {
   text-decoration: none;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+.tel-contact {
   color: #000;
   font-family: Inter;
   font-size: 20px;
