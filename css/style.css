@@ -161,23 +161,21 @@ h2 {
   justify-content: space-between;
 }
 .button {
-  background-origin: content-box;
+  /* background-origin: content-box; */
   display: block;
-  height: 15px;
-  width: 15px;
+  height: 16px;
+  width: 16px;
   border-radius: 50%;
   background-color: #0c0c0e;
   transition: 0.2s linear;
 }
 .button-r {
-  background-origin: content-box;
+  /* background-origin: content-box; */
   display: flex;
   justify-content: center;
   width: 26px;
 }
 .button:hover {
-  border-radius: 2px;
-  border: 1px solid #bb945f;
   background: #bb945f;
 }
 .button-r:hover {
@@ -213,11 +211,11 @@ h2 {
 .pag-fav-in {
   padding: 0 90px 0 0;
 }
-input {
-  cursor: pointer;
+input[type="radio"]:checked + span {
+  font-weight: bold;
 }
 label {
-  padding: 0 0 0 20px;
+  padding: 0 20px 0 0;
   cursor: pointer;
 }
 .all-bg-description {
@@ -478,8 +476,6 @@ h5 {
   flex-direction: column;
   margin: 0 20px;
 }
-.dlc-all {
-}
 .form-dlc-head {
   display: flex;
   justify-content: space-between;
@@ -490,8 +486,6 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.heading-dlc {
 }
 .form-dlc {
   display: flex;
@@ -540,6 +534,9 @@ input[type="text"] {
   border-radius: 10px;
   border: 1px solid #eee;
   transition: 0.3s border-color;
+}
+input {
+  outline: none;
 }
 .form-dlc-inner:hover {
   border: 1px solid #aaa;

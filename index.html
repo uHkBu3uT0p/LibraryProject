@@ -13,11 +13,11 @@
           <div class="name"><p class="heading">Brooklyn Public Library</p></div>
           <div class="nav-profile">
             <ul class="nav">
-              <li><a href="">About</a></li>
-              <li><a href="">Favorites</a></li>
-              <li><a href="">Coffee shop</a></li>
-              <li><a href="">Contacts</a></li>
-              <li><a href="">Library Card</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="#Favorites">Favorites</a></li>
+              <li><a href="#Coffee-shop">Coffee shop</a></li>
+              <li><a href="#Contacts">Contacts</a></li>
+              <li><a href="#Library-Card">Library Card</a></li>
             </ul>
             <img src="img/icon_profile.svg" alt="Profile" />
           </div>
@@ -32,7 +32,7 @@
       </header>
       <main class="main">
         <section class="about">
-          <h2 class="title">About</h2>
+          <h2 class="title" id="About">About</h2>
           <div class="line-main"></div>
           <p class="text-about">
             The Brooklyn Library is a free workspace, a large number of books
@@ -55,13 +55,49 @@
             </div>
           </div>
         </section>
-        <section class="favorites">
+        <section class="favorites" id="Favorites">
           <h2 class="title">Favorites</h2>
           <div class="line-main"></div>
           <div class="sub-pag">
             <p class="subtitle-favorites">Pick favorites of season</p>
             <div class="pagination-favorites">
-              <div class="pag-fav-in">
+              <label>
+                <input
+                  class="circle"
+                  type="radio"
+                  name="Favorites"
+                  value="winter"
+                />
+                <span>Winter</span>
+              </label>
+              <label>
+                <input
+                  class="circle"
+                  type="radio"
+                  name="Favorites"
+                  value="Spring"
+                />
+                <span>Spring</span>
+              </label>
+              <label>
+                <input
+                  class="circle"
+                  type="radio"
+                  name="Favorites"
+                  value="Summer"
+                />
+                <span>Summer</span>
+              </label>
+              <label>
+                <input
+                  class="circle"
+                  type="radio"
+                  name="Favorites"
+                  value="Autumn"
+                />
+                <span>Autumn</span>
+              </label>
+              <!-- <div class="pag-fav-in">
                 <input type="radio" name="case" id="case1" value="case1" />
                 <label for="case1">Winter</label>
               </div>
@@ -76,7 +112,7 @@
               <div class="pag-fav-in">
                 <input type="radio" name="case" id="case4" value="case4" />
                 <label for="case4">Autumn</label>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="all-bg-description">
@@ -170,7 +206,7 @@
             </div>
           </div>
         </section>
-        <section class="coffee-shop">
+        <section class="coffee-shop" id="Coffee-shop">
           <h2 class="title">Coffee shop</h2>
           <div class="line-main"></div>
           <p class="text-coffee-shop">
@@ -260,7 +296,7 @@
             </ul>
           </div>
         </section>
-        <section class="our-contacts">
+        <section class="our-contacts" id="Contacts">
           <h2 class="title">Our Contacts</h2>
           <div class="line-main"></div>
           <div class="contacts-all">
@@ -309,7 +345,7 @@
             </div>
           </div>
         </section>
-        <section class="digital-library-cards">
+        <section class="digital-library-cards" id="Library-Card">
           <h2 class="title">Digital Library Cards</h2>
           <div class="line-main"></div>
           <div class="form-dlc-head">
@@ -367,13 +403,13 @@
         </div>
         <div class="foot-center">
           <div class="icon-footer">
-            <a href="https://twitter.com/"
+            <a href="https://twitter.com/" target="_blank"
               ><img src="img/u_twitter-alt.svg" alt="" class="icon-foot-in"
             /></a>
-            <a href="https://www.instagram.com"
+            <a href="https://www.instagram.com" target="_blank"
               ><img src="img/u_instagram.svg" alt="" class="icon-foot-in"
             /></a>
-            <a href="https://www.facebook.com/"
+            <a href="https://www.facebook.com/" target="_blank"
               ><img src="img/u_facebook-f.svg" alt="" class="icon-foot-in"
             /></a>
           </div>
