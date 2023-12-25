@@ -37,7 +37,9 @@
               <li><a href="#Contacts">Contacts</a></li>
               <li><a href="#Library-Card">Library Card</a></li>
             </ul>
-            <img src="img/icon_profile.svg" alt="Profile" />
+            <div class="profile-icon">
+              <img src="img/icon_profile.svg" alt="Profile" />
+            </div>
           </div>
         </div>
         <div class="back">
@@ -86,7 +88,7 @@
                   name="Favorites"
                   value="winter"
                 />
-                <span>Winter</span>
+                <span class="sub-pag-fav">Winter</span>
               </label>
               <label>
                 <input
@@ -95,7 +97,7 @@
                   name="Favorites"
                   value="Spring"
                 />
-                <span>Spring</span>
+                <span class="sub-pag-fav">Spring</span>
               </label>
               <label>
                 <input
@@ -104,7 +106,7 @@
                   name="Favorites"
                   value="Summer"
                 />
-                <span>Summer</span>
+                <span class="sub-pag-fav">Summer</span>
               </label>
               <label>
                 <input
@@ -113,24 +115,8 @@
                   name="Favorites"
                   value="Autumn"
                 />
-                <span>Autumn</span>
+                <span class="sub-pag-fav">Autumn</span>
               </label>
-              <!-- <div class="pag-fav-in">
-                <input type="radio" name="case" id="case1" value="case1" />
-                <label for="case1">Winter</label>
-              </div>
-              <div class="pag-fav-in">
-                <input type="radio" name="case" id="case2" value="case2" />
-                <label for="case2">Spring</label>
-              </div>
-              <div class="pag-fav-in">
-                <input type="radio" name="case" id="case3" value="case3" />
-                <label for="case3">Summer</label>
-              </div>
-              <div class="pag-fav-in">
-                <input type="radio" name="case" id="case4" value="case4" />
-                <label for="case4">Autumn</label>
-              </div> -->
             </div>
           </div>
           <div class="all-bg-description">
@@ -139,11 +125,10 @@
                 <h3 class="heading-bg-description">Staff Picks</h3>
                 <div class="line-bg-description"></div>
                 <div class="text-bg-description-all">
-                  <h4 class="subtitle-bg-description">
-                    The Book Eaters<span class="sub-bg-des">
-                      <br />By Sunyi Dean</span
-                    >
-                  </h4>
+                  <div class="subtitle-bg-description">
+                    <h4>The Book Eaters</h4>
+                    <p class="sub-bg-des">By Sunyi Dean</p>
+                  </div>
                   <p class="text-bg-description">
                     An unusual sci-fi story about a book eater woman who tries
                     desperately to save her dangerous mind-eater son from
@@ -161,9 +146,10 @@
                 <h3 class="heading-bg-description">Staff Picks</h3>
                 <div class="line-bg-description"></div>
                 <div class="text-bg-description-all">
-                  <h4 class="subtitle-bg-description">
-                    Cackle<span> <br />By Rachel Harrison</span>
-                  </h4>
+                  <div class="subtitle-bg-description">
+                    <h4>Cackle</h4>
+                    <p class="sub-bg-des">By Rachel Harrison</p>
+                  </div>
                   <p class="text-bg-description">
                     Are your Halloween movies of choice The Witches of Eastwick
                     and Practical Magic? Look no further than here - where a
@@ -180,11 +166,10 @@
                 <h3 class="heading-bg-description">Staff Picks</h3>
                 <div class="line-bg-description"></div>
                 <div class="text-bg-description-all">
-                  <h4 class="subtitle-bg-description">
-                    Dante: Poet of the Secular World<span>
-                      <br />By Erich Auerbach</span
-                    >
-                  </h4>
+                  <div class="subtitle-bg-description">
+                    <h4>Dante: Poet of the Secular World</h4>
+                    <p class="sub-bg-des">By Erich Auerbach</p>
+                  </div>
                   <p class="text-bg-description">
                     Auerbach's engaging book places the 'Comedy' within the
                     tradition of epic, tragedy, and philosophy in general,
@@ -203,9 +188,10 @@
                 <h3 class="heading-bg-description">Staff Picks</h3>
                 <div class="line-bg-description"></div>
                 <div class="text-bg-description-all">
-                  <h4 class="subtitle-bg-description">
-                    The Last Queen<span> <br />By Clive Irving</span>
-                  </h4>
+                  <div class="subtitle-bg-description">
+                    <h4>The Last Queen</h4>
+                    <p class="sub-bg-des">By Clive Irving</p>
+                  </div>
                   <p class="text-bg-description">
                     A timely and revelatory new biography of Queen Elizabeth
                     (and her family) exploring how the Windsors have evolved and
@@ -222,6 +208,257 @@
               </div>
               <img class="img-bg-description" src="img/book3.png" alt="" />
             </div>
+            <!-- Additional material -->
+            <!-- <div class="bg-description">
+              <div class="name-bg-description">
+                <h3 class="heading-bg-description">Staff Picks</h3>
+                <div class="line-bg-description"></div>
+                <div class="text-bg-description-all">
+                  <div class="subtitle-bg-description">
+                    <h4>The Body</h4>
+                    <p class="sub-bg-des">By Stephen King</p>
+                  </div>
+                  <p class="text-bg-description">
+                    Powerful novel that takes you back to a nostalgic time,
+                    exploring both the beauty and danger and loss of innocence
+                    that is youth.
+                  </p>
+                </div>
+                <button class="button-bg-description" type="submit">Buy</button>
+              </div>
+              <img class="img-bg-description" src="img/book4.png" alt="" />
+            </div>
+            <div class="bg-description bg-description-right">
+              <div class="name-bg-description">
+                <h3 class="heading-bg-description">Staff Picks</h3>
+                <div class="line-bg-description"></div>
+                <div class="text-bg-description-all">
+                  <div class="subtitle-bg-description">
+                    <h4>Carry: A Memoir of Survival on Stolen Land</h4>
+                    <p class="sub-bg-des">By Toni Jenson</p>
+                  </div>
+                  <p class="text-bg-description">
+                    This memoir about the author's relationship with gun
+                    violence feels both expansive and intimate, resulting in a
+                    lyrical indictment of the way things are.
+                  </p>
+                </div>
+                <button class="button-bg-description" type="submit">Buy</button>
+              </div>
+              <img class="img-bg-description" src="img/book5.png" alt="" />
+            </div>
+            <div class="bg-description">
+              <div class="name-bg-description">
+                <h3 class="heading-bg-description">Staff Picks</h3>
+                <div class="line-bg-description"></div>
+                <div class="text-bg-description-all">
+                  <div class="subtitle-bg-description">
+                    <h4>Days of Distraction</h4>
+                    <p class="sub-bg-des">By Alexandra Chang</p>
+                  </div>
+                  <p class="text-bg-description">
+                    A sardonic view of Silicon Valley culture, a meditation on
+                    race, and a journal of displacement and belonging, all in
+                    one form-defying package of spare prose.
+                  </p>
+                </div>
+                <button class="button-bg-description" type="submit">Buy</button>
+              </div>
+              <img class="img-bg-description" src="img/book6.png" alt="" />
+            </div>
+            <div class="bg-description bg-description-right">
+              <div class="name-bg-description">
+                <h3 class="heading-bg-description">Staff Picks</h3>
+                <div class="line-bg-description"></div>
+                <div class="text-bg-description-all">
+                  <div class="subtitle-bg-description">
+                    <h4>Dominicana</h4>
+                    <p class="sub-bg-des">By Angie Cruz</p>
+                  </div>
+                  <p class="text-bg-description">
+                    A fascinating story of a teenage girl who marries a man
+                    twice her age with the promise to bring her to America. Her
+                    marriage is an opportunity for her family to eventually
+                    immigrate. For fans of Isabel Allende and Julia Alvarez.
+                  </p>
+                </div>
+                <button
+                  class="button-bg-description-dis"
+                  disabled
+                  type="submit"
+                >
+                  Own
+                </button>
+              </div>
+              <img class="img-bg-description" src="img/book7.png" alt="" />
+            </div>
+            <div class="bg-description">
+              <div class="name-bg-description">
+                <h3 class="heading-bg-description">Staff Picks</h3>
+                <div class="line-bg-description"></div>
+                <div class="text-bg-description-all">
+                  <div class="subtitle-bg-description">
+                    <h4>Crude: A Memoir</h4>
+                    <p class="sub-bg-des">
+                      By Pablo Fajardo & ​​Sophie Tardy-Joubert
+                    </p>
+                  </div>
+                  <p class="text-bg-description">
+                    Drawing and color by Damien Roudeau | This book illustrates
+                    the struggles of a group of indigenous Ecuadoreans as they
+                    try to sue the ChevronTexaco company for damage their oil
+                    fields did to the Amazon and her people
+                  </p>
+                </div>
+                <button class="button-bg-description" type="submit">Buy</button>
+              </div>
+              <img class="img-bg-description" src="img/book8.png" alt="" />
+            </div>
+            <div class="bg-description bg-description-right">
+              <div class="name-bg-description">
+                <h3 class="heading-bg-description">Staff Picks</h3>
+                <div class="line-bg-description"></div>
+                <div class="text-bg-description-all">
+                  <div class="subtitle-bg-description">
+                    <h4>Let My People Go Surfing</h4>
+                    <p class="sub-bg-des">By Yvon Chouinard</p>
+                  </div>
+                  <p class="text-bg-description">
+                    Chouinard—climber, businessman, environmentalist—shares
+                    tales of courage and persistence from his experience of
+                    founding and leading Patagonia, Inc. Full title: Let My
+                    People Go Surfing: The Education of a Reluctant Businessman,
+                    Including 10 More Years of Business Unusual.
+                  </p>
+                </div>
+                <button class="button-bg-description" type="submit">Buy</button>
+              </div>
+              <img class="img-bg-description" src="img/book9.png" alt="" />
+            </div>
+            <div class="bg-description">
+              <div class="name-bg-description">
+                <h3 class="heading-bg-description">Staff Picks</h3>
+                <div class="line-bg-description"></div>
+                <div class="text-bg-description-all">
+                  <div class="subtitle-bg-description">
+                    <h4>The Octopus Museum: Poems</h4>
+                    <p class="sub-bg-des">By Brenda Shaughnessy</p>
+                  </div>
+                  <p class="text-bg-description">
+                    This collection of bold and scathingly beautiful feminist
+                    poems imagines what comes after our current age of
+                    environmental destruction, racism, sexism, and divisive
+                    politics.
+                  </p>
+                </div>
+                <button class="button-bg-description" type="submit">Buy</button>
+              </div>
+              <img class="img-bg-description" src="img/book10.png" alt="" />
+            </div>
+            <div class="bg-description bg-description-right">
+              <div class="name-bg-description">
+                <h3 class="heading-bg-description">Staff Picks</h3>
+                <div class="line-bg-description"></div>
+                <div class="text-bg-description-all">
+                  <div class="subtitle-bg-description">
+                    <h4>Shark Dialogues: A Novel</h4>
+                    <p class="sub-bg-des">By Kiana Davenport</p>
+                  </div>
+                  <p class="text-bg-description">
+                    An epic saga of seven generations of one family encompasses
+                    the tumultuous history of Hawaii as a Hawaiian woman gathers
+                    her four granddaughters together in an erotic tale of
+                    villains and dreamers, queens and revolutionaries, lepers
+                    and healers.
+                  </p>
+                </div>
+                <<button class="button-bg-description" type="submit">
+                  Buy
+                </button>
+              </div>
+              <img class="img-bg-description" src="img/book11.png" alt="" />
+            </div>
+            <div class="bg-description">
+              <div class="name-bg-description">
+                <h3 class="heading-bg-description">Staff Picks</h3>
+                <div class="line-bg-description"></div>
+                <div class="text-bg-description-all">
+                  <div class="subtitle-bg-description">
+                    <h4>Casual Conversation</h4>
+                    <p class="sub-bg-des">By Renia White</p>
+                  </div>
+                  <p class="text-bg-description">
+                    White's impressive debut collection takes readers through
+                    and beyond the concepts of conversation and the casual -
+                    both what we say to each other and what we don't, examining
+                    the possibilities around how we construct and communicate
+                    identity.
+                  </p>
+                </div>
+                <button class="button-bg-description" type="submit">Buy</button>
+              </div>
+              <img class="img-bg-description" src="img/book12.png" alt="" />
+            </div>
+            <div class="bg-description bg-description-right">
+              <div class="name-bg-description">
+                <h3 class="heading-bg-description">Staff Picks</h3>
+                <div class="line-bg-description"></div>
+                <div class="text-bg-description-all">
+                  <div class="subtitle-bg-description">
+                    <h4>The Great Fire</h4>
+                    <p class="sub-bg-des">By Lou Ureneck</p>
+                  </div>
+                  <p class="text-bg-description">
+                    The harrowing story of an ordinary American and a principled
+                    Naval officer who, horrified by the burning of Smyrna, led
+                    an extraordinary rescue effort that saved a quarter of a
+                    million refugees from the Armenian Genocide
+                  </p>
+                </div>
+                <button class="button-bg-description" type="submit">Buy</button>
+              </div>
+              <img class="img-bg-description" src="img/book13.png" alt="" />
+            </div>
+            <div class="bg-description">
+              <div class="name-bg-description">
+                <h3 class="heading-bg-description">Staff Picks</h3>
+                <div class="line-bg-description"></div>
+                <div class="text-bg-description-all">
+                  <div class="subtitle-bg-description">
+                    <h4>Rickey: The Life and Legend</h4>
+                    <p class="sub-bg-des">By Howard Bryant</p>
+                  </div>
+                  <p class="text-bg-description">
+                    With the fall rolling around, one can't help but think of
+                    baseball's postseason coming up! And what better way to
+                    prepare for it than reading the biography of one of the
+                    game's all-time greatest performers, the Man of Steal,
+                    Rickey Henderson?
+                  </p>
+                </div>
+                <button class="button-bg-description" type="submit">Buy</button>
+              </div>
+              <img class="img-bg-description" src="img/book14.png" alt="" />
+            </div>
+            <div class="bg-description bg-description-right">
+              <div class="name-bg-description">
+                <h3 class="heading-bg-description">Staff Picks</h3>
+                <div class="line-bg-description"></div>
+                <div class="text-bg-description-all">
+                  <div class="subtitle-bg-description">
+                    <h4>Slug: And Other Stories</h4>
+                    <p class="sub-bg-des">By Megan Milks</p>
+                  </div>
+                  <p class="text-bg-description">
+                    Exes Tegan and Sara find themselves chained together by
+                    hairballs of codependency. A father and child experience the
+                    shared trauma of giving birth to gods from their wounds.
+                  </p>
+                </div>
+                <button class="button-bg-description" type="submit">Buy</button>
+              </div>
+              <img class="img-bg-description" src="img/book15.png" alt="" />
+            </div> -->
           </div>
         </section>
         <section class="coffee-shop" id="Coffee-shop">
@@ -327,29 +564,27 @@
               <div class="text-sub-contact">
                 <p class="text-sub-contact2">
                   Please call
-                  <a href="tel:+6177302370" class="tel-cotnact"
+                  <a href="tel:+6177302370" class="tel-contact"
                     >(617) 730-2370</a
                   >
                 </p>
                 <p class="text-sub-contact2">
                   For TTY service, please call
-                  <a href="tel:+6177302370" class="tel-cotnact"
+                  <a href="tel:+6177302370" class="tel-contact"
                     >(617) 730-2370</a
                   >
                 </p>
                 <p class="text-sub-contact2">
                   Putterham Library:
-                  <a href="tel:+6177302385" class="tel-cotnact"
+                  <a href="tel:+6177302385" class="tel-contact"
                     >(617) 730-2385</a
                   >
                 </p>
               </div>
-              <span class="subtitle-contacts" class="tel-contact"
-                >Senior Staff</span
-              >
+              <span class="subtitle-contacts">Senior Staff</span>
               <p class="text-sub-contact2">
                 Library Director:
-                <a href="mailto:AmandaHirst@gmail.com" class="tel-cotnact"
+                <a href="mailto:AmandaHirst@gmail.com" class="tel-contact"
                   ><span class="subtitle-contacts">Amanda Hirst</span></a
                 >
               </p>
@@ -403,7 +638,7 @@
               </div>
             </div>
             <div class="log-dlc">
-              <h6 class="log-dlc-head">Get a reader card</h6>
+              <p class="log-dlc-head">Get a reader card</p>
               <p class="text-log-dlc">
                 You will be able to see a reader card after logging into account
                 or you can register a new account

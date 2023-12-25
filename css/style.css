@@ -6,6 +6,9 @@
   font-family: Forum;
   src: url(../Fonts/Forum-Regular.ttf);
 }
+:root {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -32,6 +35,7 @@
   width: 70%;
   margin: 0 20px;
   justify-content: flex-end;
+  align-items: center;
 }
 .name {
   width: 30%;
@@ -53,13 +57,18 @@
   color: #fff;
   font-family: Inter;
   font-size: 20px;
+  line-height: 50px;
   text-decoration: none;
-  padding: 0 30px 0 0;
+  padding: 0 0 0 30px;
+  transition: 0.2s linear;
 }
-.icon {
+.nav li a:hover {
+  color: #bb945f;
+}
+.profile-icon {
   display: flex;
   height: 28px;
-  font-size: 50px;
+  margin: 0 0 0 40px;
 }
 .back {
   height: 600px;
@@ -198,7 +207,8 @@ h2 {
   font-family: Inter;
   font-size: 20px;
   font-weight: 700;
-  margin: 20px 20px;
+  letter-spacing: 0.3px;
+  margin: 40px 20px 20px;
 }
 .pagination-favorites {
   display: flex;
@@ -215,13 +225,16 @@ input[type="radio"]:checked + span {
   font-weight: bold;
 }
 label {
-  padding: 0 20px 0 0;
+  padding: 0 90px 0 0;
   cursor: pointer;
+}
+.sub-pag-fav {
+  padding-left: 20px;
 }
 .all-bg-description {
   display: flex;
   width: 100%;
-  margin: 20px;
+  margin: 0 20px 20px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -240,7 +253,7 @@ label {
 .name-bg-description {
   display: flex;
   width: 357px;
-  margin: 20px 0 0 20px;
+  margin: 14px 0 0 20px;
   flex-direction: column;
 }
 h3 {
@@ -259,6 +272,9 @@ h3 {
 .text-bg-description-all {
   margin: 0 0 20px;
 }
+.subtitle-bg-description {
+  margin: 0 0 20px;
+}
 h4 {
   font-family: Inter;
   font-size: 15px;
@@ -267,21 +283,19 @@ h4 {
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin: 0 0 20px;
 }
 .sub-bg-des {
   font-family: Inter;
   font-size: 15px;
-  font-style: normal;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 2px;
+  text-transform: capitalize;
 }
 .text-bg-description {
   margin: 0 auto;
   font-family: Inter;
   font-size: 15px;
-  font-style: normal;
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 2px;
@@ -330,7 +344,7 @@ h4 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0 20px;
+  margin: 0 20px 40px;
 }
 .text-coffee-shop {
   text-align: center;
@@ -392,11 +406,11 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* gap: 60px; */
   font-family: Inter;
   font-size: 20px;
   line-height: 40px;
   letter-spacing: 2px;
+  text-transform: capitalize;
 }
 .line-cs {
   width: 100px;
@@ -408,7 +422,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 54px;
   font-family: Inter;
   font-size: 20px;
   line-height: 40px;
@@ -424,7 +438,7 @@ h5 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 20px 20px 40px;
+  margin: 0 20px 40px;
 }
 .contacts-all {
   display: flex;
@@ -447,7 +461,8 @@ h5 {
   font-style: normal;
   font-weight: 700;
   line-height: 40px;
-  letter-spacing: 2px;
+  letter-spacing: 2.4px;
+  text-transform: capitalize;
 }
 .text-sub-contact {
   font-family: Inter;
@@ -457,34 +472,28 @@ h5 {
   line-height: 40px;
   letter-spacing: 2px;
   margin: 40px 0;
+  text-transform: capitalize;
 }
 .text-sub-contact2 {
   font-family: Inter;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 2px;
   margin-top: 20px;
 }
-.tel-cotnact {
+.tel-contact {
   text-decoration: none;
   color: #000;
   font-family: Inter;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 2px;
+  transition: 0.2s linear;
 }
-.tel-contact {
-  color: #000;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px;
-  letter-spacing: 2px;
+.tel-contact:hover {
+  color: #bb945f;
 }
 /* section digital-library-cards */
 .digital-library-cards {
@@ -524,7 +533,7 @@ form {
   width: 560px;
   height: 272px;
   background: #bb945f;
-  margin: 20px 0;
+  margin: 17px 0;
 }
 h6 {
   font-family: Forum;
@@ -532,13 +541,13 @@ h6 {
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 0.6px;
-  margin: 0 0 0 20px;
+  margin: 20px;
 }
 input[type="text"] {
   display: block;
   width: 520px;
   height: 66px;
-  margin: 25px 20px;
+  margin: 22px 20px;
   border: none;
   border-radius: 10px;
   color: #8e8e8e;
@@ -584,6 +593,12 @@ input[type="submit"] {
   align-items: flex-end;
   width: 456px;
 }
+.log-dlc-head {
+  font-family: Forum;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
 .text-log-dlc {
   text-align: right;
   font-family: Inter;
@@ -602,6 +617,7 @@ input[type="submit"] {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1px;
+  margin: 0 0 0 16px;
   transition: 0.2s linear;
 }
 .button-log-dlc:hover {
@@ -623,7 +639,6 @@ input[type="submit"] {
   font-family: Inter;
   font-size: 15px;
   line-height: 20px;
-  /* margin: 20px 20px; */
 }
 .text-footer-time {
   text-align: right;
@@ -631,7 +646,6 @@ input[type="submit"] {
   font-family: Inter;
   font-size: 15px;
   line-height: 20px;
-  /* margin: 20px 20px; */
 }
 .foot-top {
   display: flex;
@@ -641,11 +655,11 @@ input[type="submit"] {
 .foot-center {
   display: flex;
   justify-content: space-between;
-  margin: 20px 20px;
+  margin: 11px 20px 28px;
 }
 .icon-footer {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 .foot-bottom {
   display: flex;
@@ -658,5 +672,10 @@ input[type="submit"] {
   margin: 0 20px;
 }
 .icon-foot-in {
+  position: relative;
   margin-right: 15px;
+  transition: 1s;
+}
+.icon-foot-in:hover {
+  transform: scale(1.2);
 }
