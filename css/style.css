@@ -19,12 +19,23 @@
   margin: 0 auto;
   padding: 0;
 }
-.header {
+/* .header {
   display: block;
-  max-width: 100%;
+  max-width: 100%;  wrong
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 50;
+} */
+.header {
+  display: block;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: fixed; /*Element will scroll with the rest of the document when a user scrolls.*/
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 50;
 }
 .header:before {
@@ -44,7 +55,6 @@
   align-items: center;
   background-color: #0c0c0e;
   position: relative;
-  /* z-index: 2; */
 }
 .header_burger {
   display: none;
